@@ -7,7 +7,7 @@ LABEL maintainer="MineManage Developers <group@stye.cn>" version="1.0" license="
 # --build-arg timezone=Asia/Shanghai
 ARG timezone
 
-ENV TIMEZONE=${timezone:-"Asia/Shanghai"} \
+ENV TIMEZONE=${timezone:-"Asia/Kolkata"} \
     APP_ENV=prod \
     SCAN_CACHEABLE=(true)
 
@@ -43,7 +43,7 @@ WORKDIR /opt/www
 
 COPY . /opt/www
 
-RUN composer install --no-dev -o && cp .env.example .env && php bin/hyperf.php
+RUN composer --version && composer install --no-dev -o
 
 EXPOSE 9501 9502 9503
 

@@ -33,31 +33,9 @@ RUN set -ex \
     && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
     && echo -e "\033[42;37m Build Completed :).\033[0m\n"
 
-# update
-RUN set -ex \
-    #  ---------- some config ----------
-    && cd /etc/php81 \
-    # - config timezone
-    && ln -sf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
-    && echo "${TIMEZONE}" > /etc/timezone \
-    && echo -e "\033[42;37m Build Completed :).\033[0m\n"
-
-RUN set -ex && \
-    apk update \
-    && apk add --no-cache libstdc++ openssl git bash autoconf pcre2-dev zlib-dev re2c gcc g++ make \
-    php81-pear php81-dev php81-tokenizer php81-fileinfo php81-simplexml php81-xmlwriter \
-    && apk add --no-cache --virtual .build-deps $PHPIZE_DEPS zlib-dev libaio-dev openssl-dev curl-dev  c-ares-dev \
-    && pecl channel-update pecl.php.net \
-    && pecl install --configureoptions 'enable-reader="yes"' xlswriter \
-    && echo "extension=xlswriter.so" >> /etc/php81/conf.d/60-xlswriter.ini \
-    && php -m \
-    && php -v \
-    && php --ri swoole \
-    && mkdir -p /app-src \
-    # ---------- clear works ----------
-    && apk del .build-deps \
-    && rm -rf /var/cache/apk/* /tmp/* /usr/share/man /usr/local/bin/php* \
-    && echo -e "\033[42;37m Build Completed :).\033[0m\n"
+RUN apk --no-cache --no-progress update \
+    && apk --no-cache --no-progress upgrade \
+      && apk add --no-cache php83-gmp
 
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 

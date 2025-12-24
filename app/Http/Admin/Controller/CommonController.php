@@ -27,7 +27,6 @@ use Plugin\MineAdmin\Tenant\Service\TenantService;
  * 不需要认证的公共接口
  */
 #[HyperfServer(name: 'http')]
-#[TenantIgnore]
 final class CommonController extends AbstractController
 {
     public function __construct(

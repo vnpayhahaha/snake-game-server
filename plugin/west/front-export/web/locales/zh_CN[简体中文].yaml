@@ -1,0 +1,28 @@
+frontExport:
+  exportConfig: 导出配置
+  selectField: 请选择字段！
+  searchFieldName: 请输入字段名搜索
+  fieldNameRequired: 字段名不能为空
+  noMatchingFields: 没有匹配的字段&没有数据
+  fileName: 文件名称
+  enterFileName: 请输入文件名称
+  fileNameRequired: 文件名称不能为空
+  reportType: 报表类型
+  fileFormat: 文件格式
+  reportFields: 报表字段
+  totalFields: 共 {count} 个
+  configureFields: 配置字段
+  standardReport: 标准报表
+  csvStandardReport: 标准报表，每个商品名称一行
+  customReport: 自定义报表
+  customReportDescription: 按自主配置导出字段生成文件
+  selectAll: 全选
+  selected: 已选
+  exportName: 导出表格
+  apiNotConfigured: 请先配置接口
+  apiMissing: 接口未配置
+  fetchFailed: 获取数据失败
+  requestFailed: 数据请求失败
+  operationFailed: 操作失败
+  retryOperationFailed: 操作失败，请重试
+  exportingData: 正在导出数据，请稍候...

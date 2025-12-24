@@ -1,0 +1,13 @@
+mineTenant:
+  menu:
+    tenantManage: Multi-tenant
+    tenant: Tenant Management
+    packageManage: Package Management
+    packageList: Package List
+    packageSave: Add Package
+    packageUpdate: Update Package
+    packageDelete: Delete Package
+    tenantIndex: Tenant List
+    tenantSave: Add Tenant
+    tenantUpdate: Update Tenant
+    tenantDelete: Delete Tenant

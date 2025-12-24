@@ -1,0 +1,20 @@
+{
+    "name": "mine-admin/tenant",
+    "version": "1.2.0",
+    "type": "mixed",
+    "description": "提供多租户功能的插件",
+    "homepage": "https://www.mineadmin.com",
+    "author": [
+        {
+            "name": "MineAdmin"
+        }
+    ],
+    "composer": {
+        "psr-4": {
+            "Plugin\\MineAdmin\\Tenant\\": "src"
+        },
+        "installScript": "Plugin\\MineAdmin\\Tenant\\InstallScript",
+        "uninstallScript": "Plugin\\MineAdmin\\Tenant\\UninstallScript",
+        "config": "Plugin\\MineAdmin\\Tenant\\ConfigProvider"
+    }
+}

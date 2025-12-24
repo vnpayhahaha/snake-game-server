@@ -1,0 +1,22 @@
+{
+  "name": "west/nm-search",
+  "version": "1.0.1",
+  "type": "frontend",
+  "description": "巨量风格搜索条",
+  "author": [
+    {
+      "name": "west"
+    }
+  ],
+  "composer": {
+    "psr-4": {
+      "Plugin\\West\\NmSearch\\": "src"
+    },
+    "installScript": "Plugin\\West\\NmSearch\\InstallScript",
+    "uninstallScript": "Plugin\\West\\NmSearch\\UninstallScript",
+    "config": "Plugin\\West\\NmSearch\\ConfigProvider"
+  },
+  "package": {
+    "dependencies": []
+  }
+}

@@ -1,0 +1,13 @@
+mineTenant:
+  menu:
+    tenantManage: 多租戶
+    tenant: 租戶管理
+    packageManage: 方案管理
+    packageList: 方案列表
+    packageSave: 新增方案
+    packageUpdate: 更新方案
+    packageDelete: 刪除方案
+    tenantIndex: 租戶列表
+    tenantSave: 新增租戶
+    tenantUpdate: 更新租戶
+    tenantDelete: 刪除租戶

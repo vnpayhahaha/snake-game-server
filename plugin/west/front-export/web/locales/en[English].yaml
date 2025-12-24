@@ -1,0 +1,28 @@
+frontExport:
+  exportConfig: Export Configuration
+  selectFields: Please select fields!
+  searchFieldName: Please enter field name to search
+  fieldNameCannotBeEmpty: Field name cannot be empty
+  noMatchingFieldsOrData: No matching fields & no data
+  fileName: File name
+  enterFileName: Please enter the file name
+  fileNameCannotBeEmpty: File name cannot be empty
+  reportType: Report type
+  fileFormat: File format
+  reportFields: Report fields
+  totalFields: Total {count} fields
+  configureFields: Configure fields
+  standardReport: Standard report
+  csvStandardReport: Standard Report, each product name on a new row.
+  customReport: Custom report
+  customReportDescription: Export file generated according to self-configured fields
+  selectAll: Select All
+  selected: Selected
+  exportName: Export Table
+  apiNotConfigured: Please configure the API first
+  apiMissing: API not configured
+  fetchFailed: Failed to fetch data
+  requestFailed: Data request failed
+  operationFailed: Operation failed
+  retryOperationFailed: Operation failed, please try again
+  exportingData: Exporting data, please wait...

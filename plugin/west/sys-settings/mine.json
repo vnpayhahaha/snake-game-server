@@ -1,0 +1,24 @@
+{
+  "name": "west/sys-settings",
+  "version": "1.0.6",
+  "type": "mixed",
+  "description": "系统设置-配置与管理平台的核心功能，确保系统高效稳定运行",
+  "homepage": "https://www.mineadmin.com",
+  "author": [
+    {
+      "name": "west"
+    }
+  ],
+  "composer": {
+    "require": {},
+    "psr-4": {
+      "Plugin\\West\\SysSettings\\": "src"
+    },
+    "installScript": "Plugin\\West\\SysSettings\\InstallScript",
+    "uninstallScript": "Plugin\\West\\SysSettings\\UninstallScript",
+    "config": "Plugin\\West\\SysSettings\\ConfigProvider"
+  },
+  "package": {
+    "dependencies": []
+  }
+}

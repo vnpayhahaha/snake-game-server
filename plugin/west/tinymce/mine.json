@@ -1,0 +1,23 @@
+{
+  "name": "west/tinymce",
+  "version": "1.0.3",
+  "type": "frontend",
+  "description": "TinyMCE是一款功能强大且广泛使用的开源富文本编辑器",
+  "homepage": "https://www.mineadmin.com",
+  "author": [
+    {
+      "name": "west"
+    }
+  ],
+  "composer": {
+    "psr-4": {
+      "Plugin\\West\\Tinymce\\": "src"
+    },
+    "installScript": "Plugin\\West\\Tinymce\\InstallScript",
+    "uninstallScript": "Plugin\\West\\Tinymce\\UninstallScript",
+    "config": "Plugin\\West\\Tinymce\\ConfigProvider"
+  },
+  "package": {
+    "dependencies": {}
+  }
+}

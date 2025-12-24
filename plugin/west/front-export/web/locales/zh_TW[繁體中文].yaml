@@ -1,0 +1,28 @@
+frontExport:
+  exportConfig: 匯出設定
+  selectFields: 請選擇欄位！
+  searchFieldName: 請輸入欄位名稱搜尋
+  fieldNameCannotBeEmpty: 欄位名稱不可為空
+  noMatchingFieldsOrData: 沒有匹配的欄位＆沒有資料
+  fileName: 檔案名稱
+  enterFileName: 請輸入檔案名稱
+  fileNameCannotBeEmpty: 檔案名稱不可為空
+  reportType: 報表類型
+  fileFormat: 檔案格式
+  reportFields: 報表欄位
+  totalFields: 共 {count} 欄位
+  configureFields: 設定欄位
+  standardReport: 標準報表
+  csvStandardReport: 標準報表，每個商品名稱一行。
+  customReport: 自定義報表
+  customReportDescription: 按自我配置導出字段生成文件
+  selectAll: 全選
+  selected: 已選
+  exportName: 導出表格
+  apiNotConfigured: 請先配置接口
+  apiMissing: 接口未配置
+  fetchFailed: 獲取資料失敗
+  requestFailed: 資料請求失敗
+  operationFailed: 操作失敗
+  retryOperationFailed: 操作失敗，請重試
+  exportingData: 正在導出資料，請稍候...

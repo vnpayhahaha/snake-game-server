@@ -1,0 +1,22 @@
+{
+  "name": "west/front-export",
+  "version": "1.0.1",
+  "type": "frontend",
+  "description": "纯前端数据导出插件",
+  "author": [
+    {
+      "name": "west"
+    }
+  ],
+  "composer": {
+    "psr-4": {
+      "Plugin\\West\\FrontExport\\": "src"
+    },
+    "installScript": "Plugin\\West\\FrontExport\\InstallScript",
+    "uninstallScript": "Plugin\\West\\FrontExport\\UninstallScript",
+    "config": "Plugin\\West\\FrontExport\\ConfigProvider"
+  },
+  "package": {
+    "dependencies": []
+  }
+}

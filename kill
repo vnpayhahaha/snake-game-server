@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+# 关闭端口
+$cmd = "ps aux | grep 'hyperf' | grep -v 'grep' | awk '{print }' | xargs kill -9";
+$output = shell_exec($cmd);
+echo "Hyperf processes have been killed.\n";

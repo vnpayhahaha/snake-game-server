@@ -1,4 +1,4 @@
-FROM hyperf/hyperf:8.3-alpine-v3.19-swoole
+FROM hyperf/hyperf:8.3-alpine-v3.21-swoole
 LABEL maintainer="MineManage Developers <group@stye.cn>" version="1.0" license="MIT" app.name="MineManage"
 
 ##
